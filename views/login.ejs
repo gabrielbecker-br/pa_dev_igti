@@ -1,0 +1,18 @@
+<h1>Login</h1>
+<% if (message) { %>
+  <p>
+    <label style="color: red"><%= message %></label>
+  </p>
+<% } %>
+<form action="/login" method="POST">
+  <div>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="password">Senha</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit">Login</button>
+</form>
+<a href="/users/signup">Não possui cadastro?</a> | <a href="/users/forgot">Esqueceu sua senha?</a>
