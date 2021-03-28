@@ -61,5 +61,5 @@ app.use('/', checkAuthenticated, indexRouter)
 
 app.listen(process.env.SERVER_PORT, () => console.info(`[INFO] Server Started at port ${process.env.SERVER_PORT}`))
 
- 
+console.log('Teste github')
 
